@@ -460,8 +460,6 @@ class action_plugin_404manager extends DokuWiki_Action_Plugin
 
         // Query String to pass the message
         $urlParams = array(
-            self::QUERY_STRING_ORIGIN_PAGE => $ID,
-            self::QUERY_STRING_REDIR_TYPE => $redirectSource
         );
 
         // TODO: Status code
@@ -650,8 +648,6 @@ class action_plugin_404manager extends DokuWiki_Action_Plugin
         $urlParams = array(
             "do" => "search",
             "q" => $query,
-            self::QUERY_STRING_ORIGIN_PAGE => $ID,
-            self::QUERY_STRING_REDIR_TYPE => self::REDIRECT_SEARCH_ENGINE
         );
 
         // TODO: Status code ?
